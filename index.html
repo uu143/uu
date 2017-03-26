@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		*{margin: 0;padding: 0;}
+		ul{
+			width: 600px;margin: 30px auto 0;}
+		ul li{
+			list-style: none;
+			float: left;
+			width: 80px;height: 50px;
+			background: silver;
+			text-align: center;
+			line-height: 50px;position: relative;margin-left: 35px;
+			}
+			/*在元素前加内容*/
+		ul li::before{
+			position: absolute;
+			content: "";
+			display: block;
+			width: 20px;height: 50px;
+			background: red;
+		    left: -20px;
+		    top: 0;}
+			/*在元素后加内容*/
+		ul li::after{
+			position:absolute;
+			content: "";
+			display: block;
+			width: 20px;height: 50px;
+			background: red;
+			right: -20px;top: 0;}
+		ul li:hover{margin-top: -10px;
+			/*过渡*/
+			transition: all 0.2s;
+			box-shadow: 0px 2px 5px black;}
+			li:hover:before{transform: rotate(-30deg) skew(-30deg) translate(2px,9px);
+			transition: all 0.2s;height: 86%;}
+			li:hover:after{transform: rotate(30deg) skew(30deg) translate(-2px,9px);
+			transition: all 0.2s;height: 86%;}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a href="3D.html">3D方块</a></li>
+			<li><a href="rotateX.html">rotateX</a></li>
+			<li><a href="picture.html">图片轮播</a></li>
+			<li>子菜单</li>
+			<li>虎</li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>子菜单</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			/*.box{
+				width: 800px;
+				height: 100px;
+				margin: 0 auto;
+			}*/
+			ul{position: relative;}
+			ul li{list-style: none;
+			width: 100px;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
+			font-size: 15px;
+			background: salmon;
+			border-bottom: 1px solid black;
+			position: relative;
+			}
+			.ld{display: none;/*隐藏*/
+			width:300px;
+			height:306px;
+			background:red;
+			position:absolute;
+			left:100px;
+			top: 0;}
+			li:hover+.ld{
+				display:block;/*让它出现*/
+			}
+			span{display: block;width: 0px;height: 0px;/*转成块结构就可以设置大小*/
+			border: 5px solid yellow;
+			border-color: salmon red salmon salmon;
+			position: absolute;right: 0;top: 20px;display: none;}
+			li:hover span{display: block;}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li><a href="#">首页</a><span></span>
+				
+				</li><div class="ld">
+					<p>11111</p>
+					<p>22222</p>
+					<p>33333</p>
+					<p>44444</p>
+					
+				</div>
+				<li>首页<span></span>
+				
+				</li><div class="ld">
+					<p>11111</p>
+					<p>23456</p>
+					<p>33333</p>
+					<p>44444</p>
+				</div>
+				<li>首页<span></span>
+				
+				</li><div class="ld">
+					<p>11111</p>
+					<p>22222</p>
+					<p>36592</p>
+					<p>44444</p>
+				</div>
+				<li>首页<span></span>
+				
+				</li><div class="ld">
+					<p>11111</p>
+					<p>22222</p>
+					<p>33333</p>
+					<p>44444</p>
+				</div>
+				<li>首页<span></span>
+				
+				</li><div class="ld">
+					<p>11111</p>
+					<p>22222</p>
+					<p>33333</p>
+					<p>44444</p>
+				</div>
+				<li>首页<span></span>
+				
+				</li><div class="ld">
+					<p>11111</p>
+					<p>22222</p>
+					<p>33333</p>
+					<p>44444</p>
+				</div>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>这是练习</title>
+		<style type="text/css">
+		*{margin: 0;padding: 0;} 
+		    div{width: 500px;height: 300px;overflow: hidden;margin: 0 auto;border-radius: 250px;} 
+		    /*动画  infinite循环*/
+		    ul{width: 2500px;height: 300px;animation: a 5s infinite; position:relative;}/*border-radius 圆角*/
+		    ul li{list-style: none;float: left;}
+		    img{width: 500px;height: 300px;}
+		    @keyframes a{
+		    	0%{left: 0px;}
+		    	20%{left: -500px;}
+		    	40%{left: -1000px;}
+		    	60%{left: -1500px;}
+		    	80%{left: -2000px;}
+		    	100%{left: 0px;}
+		    }
+		    p{height: 50px;width: 500px;margin:30px auto;text-align: center;background: wheat;font-size:30px;
+		    text-shadow: 2px 2px 3px yellow;
+		    box-shadow: 0px 0px 6px 4px black;
+		    box-shadow: inset 0px 0px 4px 3px red;} /**/
+		   h1{height: 1000px;}
+		   .img{display: block;margin: 0 auto;transition: all 5s;}/*把本身的属性转成了块结构 transition过度*/
+		  .img:hover{transform: rotate(360deg);}
+		  /*h1+.img:hover
+		   * 加号代表.img是h1后面的第一个属性，若不是第一个元素，则不能用； 鼠标放在图上才会旋转*/
+		  .b{text-align: center;margin: 20px auto;}
+		</style>
+	</head>
+	<body>
+		<div id="a">
+			<ul class="a">
+				<li class="a"><img src="img/1.jpg"</li>
+				<li><img src="img/2.jpg"</li>
+				<li><img src="img/3.jpg" </li>
+				<li><img src="img/4.jpg"</li>
+				<li><img src="img/5.jpg"</li>
+			</ul>
+		</div>
+		<p>这里是一行带阴影的文字</p>
+				
+		<h1></h1>
+		<img class="img" src="img/1.jpg" />
+<div class="b"><a href="#a">轮播图</a></div>
+	</body>
+</html>
